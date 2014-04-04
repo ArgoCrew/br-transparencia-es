@@ -163,7 +163,7 @@
 			"file": "app.js",
 			"settings":
 			{
-				"buffer_size": 6510,
+				"buffer_size": 6528,
 				"line_ending": "Windows"
 			}
 		}
@@ -356,15 +356,15 @@
 					"file": "app.js",
 					"settings":
 					{
-						"buffer_size": 6510,
+						"buffer_size": 6528,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5516,
-								5516
+								0,
+								0
 							]
 						],
 						"settings":
