@@ -137,6 +137,9 @@
 					
 					delayPagina -= 0.5;
 					
+					code += "ADD !EXTRACT " + municipios[m][0];
+					code += "ADD !EXTRACT " + registro;
+					code += "ADD !EXTRACT " + pagina;
 					code += "ADD !EXTRACT {{!URLCURRENT}} \n";
 					code += "SAVEAS TYPE=EXTRACT FOLDER=* FILE=GeoObras_" + municipios[m][0] + "_{{!NOW:dd/mm/yyyy}}.csv \n";
 					code += "SET !EXTRACT NULL \n";
