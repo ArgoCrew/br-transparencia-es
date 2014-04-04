@@ -50,6 +50,7 @@ function scrapingObraDetalhe(obra) {
 		obra.endereco.municipio = $('table.listagem:nth-child(2) tr:nth-child(10) td:nth-child(2)').text().trim();
 		obra.endereco.cep =  $('table.listagem:nth-child(2) tr:nth-child(11) td:nth-child(2)').text().trim();
 
+		//TODO: 
 	  	obra.engenheiros = {};
 		obra.engenheiros.fiscalizacao = [];
 		obra.engenheiros.fiscalizacao = $('table.listagem:nth-child(4) tr:nth-child(1) td:nth-child(2)').text().trim();
@@ -63,7 +64,7 @@ function scrapingObraDetalhe(obra) {
 		obra.contrato.numero_obra = contratoRegExp.exec(contrato)[3];
 		obra.contrato.data_assinatura = $('#ctl00_ContentPlaceHolderConteudo_dataAssinaturaLabel').text().trim();
 		obra.contrato.regime_execucao = $('#ctl00_ContentPlaceHolderConteudo_regimeExecucaoLabel').text().trim();
-	  	//TODO: Separar modalidade, numero e ano da licitacao
+	  	
 		var licitacao = $('#ctl00_ContentPlaceHolderConteudo_editalNumeroLabel').text().trim();
 		var licitacaoRegExp = new RegExp('(\\d+).*?((?:(?:[1]{1}\\d{1}\\d{1}\\d{1})|(?:[2]{1}\\d{3})))(?![\\d])');
 	  	obra.contrato.modalidade_licitacao = $('#ctl00_ContentPlaceHolderConteudo_modalidadeLicitacaoLabel').text().trim();
